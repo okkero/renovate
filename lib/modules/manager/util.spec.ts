@@ -141,7 +141,6 @@ describe('modules/manager/util', () => {
     expect(dependency).toStrictEqual({
       datasource: GitRefsDatasource.id,
       packageName: git,
-      currentValue: undefined,
       skipReason: 'unspecified-version',
     });
   });

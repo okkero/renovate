@@ -282,7 +282,7 @@ exports[`modules/manager/cargo/extract > extractPackageFile() > extracts multipl
     },
   },
   {
-    "currentValue": undefined,
+    "currentValue": "0.1.0",
     "datasource": "git-refs",
     "depName": "git_dep_with_version",
     "depType": "dependencies",
@@ -293,7 +293,7 @@ exports[`modules/manager/cargo/extract > extractPackageFile() > extracts multipl
     "skipReason": "unspecified-version",
   },
   {
-    "currentValue": undefined,
+    "currentValue": "",
     "datasource": "git-refs",
     "depName": "git_dep",
     "depType": "dependencies",

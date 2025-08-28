@@ -372,7 +372,6 @@ describe('modules/manager/pep621/extract', () => {
           depType: depTypes.uvSources,
           datasource: GitRefsDatasource.id,
           packageName: 'https://github.com/foo/bar',
-          currentValue: undefined,
           skipReason: 'unspecified-version',
         },
         {

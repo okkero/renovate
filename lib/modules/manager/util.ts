@@ -36,10 +36,14 @@ export function applyGitSource(
     dep.currentDigest = rev;
     dep.replaceString = rev;
     dep.skipReason = undefined;
-  } else {
+  } else if (branch) {
     dep.datasource = GitRefsDatasource.id;
     dep.packageName = git;
     dep.currentValue = branch;
-    dep.skipReason = branch ? 'git-dependency' : 'unspecified-version';
+    dep.skipReason = 'git-dependency';
+  } else {
+    dep.datasource = GitRefsDatasource.id;
+    dep.packageName = git;
+    dep.skipReason = 'unspecified-version';
   }
 }
